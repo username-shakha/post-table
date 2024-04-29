@@ -1,0 +1,35 @@
+table {
+  border: 1px solid #e3e6ec;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+thead {
+  user-select: none;
+}
+
+thead > tr > th {
+  height: 40px;
+  background: #f0f0f0;
+  color: #000000e0;
+  cursor: pointer;
+}
+
+tbody > tr:not(:last-of-type) {
+  border-bottom: 1px solid #e3e6ec;
+}
+
+tbody > tr > td:not(:last-of-type) {
+  border-right: 1px solid #e3e6ec;
+}
+
+tbody > td {
+  padding: 8px;
+}
+
+table .error-notification {
+  width: 100%;
+  padding: 5px;
+  font-weight: 400;
+  text-align: center;
+}
