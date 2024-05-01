@@ -56,3 +56,8 @@ h1 {
   max-width: 1079px;
   margin: 0 auto;
 }
+
+.loading {
+  padding: 10px;
+  text-align: center;
+}
