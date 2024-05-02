@@ -3,7 +3,7 @@ import CustomTable from './components/custom-table'
 import { POSTS_TABLE_HEADS } from './constants'
 
 export default function App() {
-  const { postsData, loading } = usePosts({
+  const { postsData, loading, setSort } = usePosts({
     autoLoad: true,
   })
   return (
@@ -12,6 +12,7 @@ export default function App() {
         rows={postsData}
         heads={POSTS_TABLE_HEADS}
         isLoading={loading}
+        onSort={setSort}
       />
     </div>
   )
