@@ -4,6 +4,7 @@ import { IPost, ISort } from '../interfaces'
 export default function usePosts({ autoLoad }: { autoLoad?: boolean }) {
   const [loading, setLoading] = useState<boolean>(false)
   const [posts, setPosts] = useState<IPost[]>([])
+  const [filter, setFilter] = useState<string>('')
   const [sort, setSort] = useState<ISort | null>(null)
   const fetchPosts = useCallback(async () => {
     setLoading(true)
@@ -27,12 +28,16 @@ export default function usePosts({ autoLoad }: { autoLoad?: boolean }) {
     if (sort != null) {
       console.log(sort)
     }
+    if (filter.length > 0) {
+      console.log(filter)
+    }
     return posts
-  }, [posts, sort])
+  }, [posts, sort, filter])
   return {
     loading,
     fetchPosts,
     postsData,
     setSort,
+    setFilter,
   }
 }
