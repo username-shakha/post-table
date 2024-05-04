@@ -28,3 +28,8 @@ export interface ISort {
   key: string
   type: ETableHeaderType
 }
+
+export interface IPagination {
+  perPage: number
+  page: number
+}
