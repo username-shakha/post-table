@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { IPagination, IPost, ISort } from '../interfaces'
-
-export default function usePosts({ autoLoad }: { autoLoad?: boolean }) {
+const usePosts = ({ autoLoad }: { autoLoad?: boolean }) => {
   const [loading, setLoading] = useState<boolean>(false)
   const [posts, setPosts] = useState<IPost[]>([])
   const [filter, setFilter] = useState<string>('')
@@ -39,7 +38,6 @@ export default function usePosts({ autoLoad }: { autoLoad?: boolean }) {
 
     console.log(slicedPosts)
     if (sort != null) {
-      console.log(sort)
     }
     if (filter.length > 0) {
       console.log(filter)
@@ -62,3 +60,5 @@ export default function usePosts({ autoLoad }: { autoLoad?: boolean }) {
     total,
   }
 }
+
+export default usePosts
