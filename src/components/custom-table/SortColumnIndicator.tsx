@@ -8,7 +8,6 @@ interface ISortColumnIndicatorProps {
 export default function SortColumnIndicator({
   sortType,
 }: ISortColumnIndicatorProps) {
-  console.log(sortType)
   if (sortType === SortOption.ASC) return <UpIcon />
   if (sortType === SortOption.DESC) return <DownIcon />
   return sortType

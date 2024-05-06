@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 table {
   border: 1px solid #e3e6ec;
   border-collapse: collapse;
@@ -9,13 +11,18 @@ thead {
 
 thead > tr > th {
   height: 40px;
-  background: #f0f0f0;
-  color: #000000e0;
+  background: #000000b8;
+  color: #f0f0f0;
+  font-family: 'Mulish';
   cursor: pointer;
 }
 
 tbody > tr:not(:last-of-type) {
   border-bottom: 1px solid #e3e6ec;
+}
+
+tbody > tr > td {
+  font-family: 'Roboto, sans-serif';
 }
 
 tbody > tr > td:not(:last-of-type) {

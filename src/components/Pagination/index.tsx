@@ -16,7 +16,6 @@ const Pagination = ({
   onChangePage,
   style,
 }: IPaginationProps) => {
-  console.log(page, perPage, total, onChangePage, style)
   const [currentPage, setCurrentPage] = useState(page)
   const totalPages = Math.ceil(total / perPage)
 

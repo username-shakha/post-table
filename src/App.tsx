@@ -17,7 +17,11 @@ export default function App() {
         endIcon={<SearchIcon />}
         // eslint ↓7v current 7
         placeholder="Search"
-        style={{ maxWidth: 600, marginTop: 24, marginBottom: 16 }}
+        style={{
+          maxWidth: 400,
+          marginTop: 24,
+          marginBottom: 16,
+        }}
         onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
           setFilter(e.target.value)
         }}
