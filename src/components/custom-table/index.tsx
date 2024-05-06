@@ -24,8 +24,7 @@ export default function CustomTable({
 }: TCustomTableProps) {
   const [sortType, setSortType] = useState<SortOption | null>(null)
   const [sortedColumn, setSortedColumn] = useState('')
-  console.log(sortType)
-  console.log(sortedColumn)
+
   return (
     <table>
       <thead>
