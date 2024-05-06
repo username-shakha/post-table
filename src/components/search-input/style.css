@@ -16,3 +16,8 @@
     color: #b2b7bf;
   }
 }
+
+.search-hightligh {
+  background-color: black;
+  color: white;
+}
